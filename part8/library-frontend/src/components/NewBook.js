@@ -4,12 +4,13 @@ import { ALL_BOOKS, ALL_AUTHORS, CREATE_BOOK } from "../queries";
 
 const NewBook = (props) => {
   const [title, setTitle] = useState("");
-  const [author, setAuhtor] = useState("");
+  const [authorName, setAuthorName] = useState("");
+  const [authorBorn, setAuthorBorn] = useState("");
   const [published, setPublished] = useState("");
   const [genre, setGenre] = useState("");
   const [genres, setGenres] = useState([]);
 
-  const [createBook, { data, loading, error }] = useMutation(CREATE_BOOK, {
+  const [createBook] = useMutation(CREATE_BOOK, {
     refetchQueries: [{ query: ALL_BOOKS, ALL_AUTHORS }],
   });
 
@@ -18,13 +19,16 @@ const NewBook = (props) => {
   }
 
   const submit = async (event) => {
-    createBook({ variables: { title, author, published, genres } });
+    await createBook({
+      variables: { title, authorName, authorBorn, published, genres },
+    });
 
     event.preventDefault();
 
     setTitle("");
     setPublished("");
-    setAuhtor("");
+    setAuthorName("");
+    setAuthorBorn("");
     setGenres([]);
     setGenre("");
   };
@@ -45,10 +49,17 @@ const NewBook = (props) => {
           />
         </div>
         <div>
-          author
+          author name
           <input
-            value={author}
-            onChange={({ target }) => setAuhtor(target.value)}
+            value={authorName}
+            onChange={({ target }) => setAuthorName(target.value)}
+          />
+        </div>
+        <div>
+          author born
+          <input
+            value={authorBorn}
+            onChange={({ target }) => setAuthorBorn(target.value)}
           />
         </div>
         <div>
