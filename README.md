@@ -6,6 +6,8 @@ It serves as an introduction to modern web application development with JavaScri
 
 Other topics that this course covers is testing, configuration & environment management, TypeScript, and the use of MongoDB for storing the application’s data. This repository contains my solutions for some of this course's exercises that I found extra interesting.
 
+Keywords: React, Redux, Node.js, MongoDB, REST, GraphQL, TypeScript
+
 ### [Part 2 - Communicating with server](./part2)
 
 ### [Part 3 - Programming a server with NodeJS and Express](./part3)
