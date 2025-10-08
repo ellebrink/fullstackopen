@@ -1,5 +1,5 @@
 # Personal summer project
-I was bored one summer and took the free online fullstackopen.com course to improve my skills in some areas that I felt I were lacking in.
+I was bored one summer and took the free online [fullstackopen.com](https://fullstackopen.com/) course to improve my skills in some areas that I felt I were lacking in.
 
 # [Full Stack Open 2021](https://fullstackopen.com/en/)
 
