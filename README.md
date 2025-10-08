@@ -1,6 +1,7 @@
-# [Full Stack Open 2021](https://fullstackopen.com/en/)
+# Personal summer project
+I was bored one summer and took the free online fullstackopen.com course to improve my skills in some areas that I felt I were lacking in.
 
-This course is held at the Department of Computer Science at the University of Helsinki.
+# [Full Stack Open 2021](https://fullstackopen.com/en/)
 
 It serves as an introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST as well as GraphQL APIs built with Node.js.
 
